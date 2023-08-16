@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLM Productos</title>
+    <link rel="shorcut icon" href="/Imagenes/GLM.png">
+    <link rel="stylesheet" href="/styles/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      a:hover {
+          color: #fff;
+      }
+      a {
+        color: #ffba00;
+      }
+
+      .separador {
+            border-top: 1px solid #e0e0e0; 
+            padding-top: 10px;
+            margin-top: 10px; 
+      }
+
+      .foto-productos {
+        height: 80%;
+        width: 100%;
+      }
+
+      #catalogo img {
+        margin: 0;
+      }
+
+  
+      
+  </style>
+</head>
+<body class="bg-black">
+    <header class="header">
+        <nav class="header__menu">
+            <div class="logo__mobile"> 
+                <a href="/index.html" ><img id="logo-inicio" src="/Imagenes/GLM.png"alt="Logo Ghetto Life Muzik" width="80px"></a> 
+            </div>
+            <ul class="menu__nav">
+                <li><a href="/views/productos.html">Productos</a></li>
+                <li><a href="/views/nosotros.html">Nosotros</a></li>
+                <li><a href="/views/contacto.html">Contacto</a></li>
+            </ul> 
+            </div>
+        </nav>  
+    </header>
+    <section class="seccionimagenes container mb-4 ">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade ">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-50">
+              <div class="carousel-item active">
+                <img src="/Imagenes/Microfono.jpg" class="d-block  foto-productos " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Grabaciones</h5>
+                  <p>Grabación de voces e instrumentos con las mejores herramientas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Imagenes/Piano fondo1.jpg" class="d-block  foto-productos" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Producciones Musicales Completas</h5>
+                  <p>Grabacion, Beat, Mezcla y Master en un solo pack! </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Imagenes/Apollo twin.jpg" class="d-block  foto-productos" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mezcla y Master</h5>
+                  <p>El sonido que buscas siempre sera la desicion correcta</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+    </section>
+    <section class="container-fluid mb-4">
+      <div class="separador"></div>
+      <div class="text-light text-center "> 
+        <h2 class="row-sm-3">Visita nuestro catálogo <a class="text-decoration-none  link" href="#catalogo">AQUI!</a></h2>
+        <h3>o solicita una cotización <a class="text-decoration-none  link" href="https://wa.me/56954762733">Whatsapp</a></h3>
+      </div>
+      <div class="separador"></div>
+    </section>
+    <section class="container m-4">
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>Grabaciones</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show bg-warning-subtle" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Instrumentos, voces o proyectos acústicos</strong>. Nos encargamos de generar una buena grabación dando consejos y técnicas para un mejor desarrollo del trabajo. No olvidar que un buen trabajo de audio parte siempre por una buena grabación y nos encargamos de que asi sea.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Beatmaking</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse bg-warning-subtle" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Trabajo dedicado a crear instrumentales</strong> , blackmusic generalmente trabajando los mas demandados por la comunidad de artistas que trabajan con nosotros. Podemos 
+              generar instrumentales desde cero , con composiciónes únicas como tambien partir desde tu composicion etc. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>Mezcla y Master</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Trabajo dedicado a potenciar la emoción principal de tu proyecto y el sonido de este</strong> .Mezclamos los sonidos idientificando cuales son los elementos principales y como actua la presencia de estos en tu track, para luego pasar a trabajar en el track general , masterizarlo para dejarlo listo para su distribuicion y reproducción. Estos procesos son las dos últimas etapas en el trabajo del audio.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="catalogo" class="container-fluid flex-column justify-content-center w-100 h-100 m-1">
+      <div class="separador"></div>
+      <h2 class="text-warning text-center m-4">Catalogo</h2>
+      <div class="separador"></div>
+      <div class="flex-column w-100 h-50 ">
+        
+        <img class="img-fluid w-100" src="/Imagenes/Catalogo/2 Prod Musical.png" alt="Prod musical Catalogo" width="80%">
+        <img class="img-fluid w-100" src="/Imagenes/Catalogo/3 Beats.png" alt="Beats Catalogo" width="80%">
+        <img class="img-fluid w-100" src="/Imagenes/Catalogo/4 Grabaciones.png" alt="Grabaciones Catalogo" width="80%">
+        <img class="img-fluid w-100" src="/Imagenes/Catalogo/5 Sonido.png" alt="Portada catalogo" width="80%">
+      </div>
+    </section>
+    <footer class="footer ">
+        <div class="separador"></div>
+        <h5 class="footer__titulo text-warning">Redes Sociales y Links</h5>
+        
+        <div class="footer__links">
+            <a href="views/contacto.html">Contacto</a>
+            <a href="https://www.instagram.com/ghettolifemuzik/">Instagram</a>
+            <a href="https://wa.me/56954762733">Whatsapp +56954762733</a>
+            <a href="https://www.youtube.com/@GhettoLifeMuzik">Youtube</a>
+        </div>
+        
+       </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
