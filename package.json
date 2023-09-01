@@ -1,0 +1,11 @@
+{
+  "name": "2dapreentrega_marcelo_tello",
+  "version": "1.0.0",
+  "description": "2da pre entrega del trabajo de coder house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
