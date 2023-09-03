@@ -1,11 +1,25 @@
-@charset "UTF-8";
-/* Variables */
+/* Fondos */
+/* Colores */
+.header {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  color: #ffba00;
+}
+.header a {
+  color: #ffba00;
+  transition: color 1s;
+}
 .header a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
 }
 
 .main__nosotros {
-  background-image: linear-gradient(#000000, #490000);
+  background-image: linear-gradient(#000000, #360036, #000000);
 }
 
 .nosotros__presentacion {
@@ -17,18 +31,17 @@
   height: 600px;
   overflow: hidden;
 }
-
 .nosotros__presentacion .nosotros__fondo {
   width: 100%;
+  height: 100%;
   opacity: 0.5;
+  overflow: hidden;
 }
-
 .nosotros__presentacion .nosotros__presentacion__ghetto {
   display: flex;
   flex-direction: column;
   position: absolute;
 }
-
 .nosotros__presentacion .nosotros__presentacion__ghetto h1 {
   font-size: 45px;
   text-align: center;
@@ -36,36 +49,90 @@
   transition: font-size 1s, color 2s;
   margin: 0px;
 }
-
 .nosotros__presentacion .nosotros__presentacion__ghetto h1:hover {
   font-size: 55px;
   color: white;
 }
-
 .nosotros__presentacion .nosotros__presentacion__ghetto .nosotros__logo {
   display: flex;
+  justify-self: center;
+  align-self: center;
   width: 280px;
   position: relative;
   transition: width 2s;
 }
-
 .nosotros__presentacion .nosotros__presentacion__ghetto .nosotros__logo:hover {
   width: 320px;
 }
 
-.nosotros__presentacion .nosotros__presentacion__sobre {
+.sobre__nosotros {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin: 10px 0px 10px 0px;
+}
+.sobre__nosotros .sobre__nostros__texto {
   width: 80%;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.sobre__nosotros h1 {
+  text-align: left;
+}
+.sobre__nosotros p {
+  margin: 0;
+  padding: 0;
+}
+
+.nosotros__team {
+  display: grid;
+  flex-flow: row wrap;
+}
+.nosotros__team .nosotros__team__item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-self: center;
+  justify-self: center;
+}
+.nosotros__team .nosotros__team__item h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+.nosotros__team .nosotros__team__item a {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+.nosotros__team .nosotros__team__item a img {
+  width: 200px;
+  display: flex;
+  transition: width 2s;
+  border-radius: 300px;
+  align-self: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.nosotros__team .nosotros__team__item a img:hover {
+  width: 250px;
+}
+.nosotros__team .nosotros__team__item a p {
+  text-align: center;
+  margin: 0;
 }
 
 .nosotros__videos {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Proporción 16:9 */
-  height: 0;
+  height: 315px;
   overflow: hidden;
 }
-
 .nosotros__videos iframe {
   position: absolute;
   top: 0;
@@ -80,6 +147,5 @@
     height: 315px;
   }
 }
-
 
 /*# sourceMappingURL=styles.css.map */
