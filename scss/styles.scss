@@ -2,7 +2,6 @@
 
 $fondo-gradiente:linear-gradient(to left, #360036,#000000);
 $fondo-gradiente2:linear-gradient( #000000,#360036,#000000);
-
 /* Colores */
 
 $color-principal:#ffba00;
@@ -10,7 +9,7 @@ $color-secundario:#ffffff;
 $color-tercero:#91007d;
 $color-principal-opaco: #af8000;
 
-$sombra:0 10px 5px rgba(0, 0, 0, 0.3);
+$sombra:0 10px 13px rgba(0, 0, 0, 0.3);
 $margin-secciones: 10px 0px 10px 0px;
 
 body {
@@ -25,7 +24,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  .main {
+  main {
     display: grid;
     flex-wrap: wrap;
     flex-direction: column;
@@ -44,7 +43,7 @@ body {
   width: 100%;
   height: 100%; 
   box-shadow: $sombra;
-  color: $color-principal;
+  color: $color-secundario;
     .header__menu {
       background-image: linear-gradient(#360036,#000000);
       text-align: center;
@@ -56,6 +55,10 @@ body {
       height: 100%;
       display: flex;
       flex-direction: column;
+      .logo__mobile {
+        height: 100%;
+        width: 100%;
+      }
     }
     .menu__nav {
       list-style: none;
@@ -68,15 +71,18 @@ body {
     }
     a {
       font-family: 'Arvo', serif;
+      width: 100%;
+      height: 100%;
       margin: 5px;
       text-decoration: none;
-      color: #ffba00;
+      color: $color-secundario;
       font-size:18px;
-      font-weight: bold;
-      color: $color-principal;
-      transition: color 1s;
+      font-weight: normal;
+      transition: color 1s, font-size 1s;
         &:hover {
-            color: rgb(255, 255, 255);
+            color:$color-principal;
+            font-size: 20px;
+
         }
     }
 }
@@ -102,11 +108,13 @@ body {
       text-align: left;
       justify-content: center;
       justify-self: center;
+      font-family: 'Arvo' , serif;
         a {
           width: 75px;
           text-decoration: none;
           color: #a57900;
           margin-bottom: 1px;
+          
         }
     }
 }
@@ -190,20 +198,24 @@ body {
   }
 }
 @media (min-width:375px) {
-  .presentacion__foto {
+  .presentacion {
+    .presentacion__foto {
       width: 100%;
+    }
   }
 }
 @media (min-width:768px) {
-  .presentacion__texto__parrafo {
-      font-size: 18px;
-  }
+  .presentacion{
+    .presentacion__texto{
+      
+      .presentacion__texto__parrafo {
+        font-size: 18px;
+      } 
+    }
+  }  
 }
-@media (min-width:1024px) {
-  .presentacion__texto {
-      justify-self: start;
-  }
-}
+
+
 
 .caracteristicas {
   display: grid;
@@ -212,7 +224,7 @@ body {
   text-align: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  background-image: linear-gradient(#360036,#000000);
+  background-image: $fondo-gradiente2;
 
   width: 100%;
   margin-bottom: 5px;
@@ -363,30 +375,31 @@ body {
   position: relative;
   display: grid;
   flex-flow: column wrap;
-  justify-self: center;
-  
+  background-image: $fondo-gradiente2;
+
   text-align: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
   .producciones__videos {
-
+    display: flex;
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
+    justify-content: space-around;
     
     .videos__grupo {
       width: 80%;
       position: relative;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr ;
+      display: flex;
       flex-flow: row wrap;
+      justify-content: space-around;
+      overflow: hidden;
       
        .videos__videos{
-        margin: 4px;
-        justify-self: center;
         position: relative;
+        
        }
     }
   }
@@ -399,11 +412,7 @@ body {
 }
 
 
-/* Nosotros */
-.main__nosotros {
-    background-image: $fondo-gradiente2;
-}
-
+/* Views/Nosotros */
 .nosotros__presentacion {
     display: grid;
     flex-direction: column;
@@ -457,9 +466,12 @@ body {
   flex-flow: row wrap;
   position: relative;
   width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
   align-self: center;
   justify-self: center;
   margin: $margin-secciones;
+  background-image: linear-gradient(#000000,#360036);
   
     .sobre__nostros__texto {
       width: 80%;
@@ -474,11 +486,12 @@ body {
       margin: 0;
       padding: 0;
     }
-}  
-
+}
+ 
 .nosotros__team {
   display: grid;
   flex-flow: row wrap;
+  background-image: $color-principal-opaco;
    .nosotros__team__item {
     display: flex;
     flex-direction: column;
@@ -514,6 +527,14 @@ body {
       }
    }
 }
+
+.nosotros__producciones {
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: $fondo-gradiente2;
+
+}
 .nosotros__videos {
     position: relative;
     width: 100%;
@@ -535,3 +556,119 @@ body {
     }
 } 
 
+/* Views/Contacto */
+
+.main__titulo {
+    text-align: center;
+  
+}
+
+.contacto__1 {
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;   
+    form { 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+      
+      .formulario__turnos {
+        display: flex;
+        justify-content: center;
+        input {
+          margin: 0px 10px;
+        }
+        div {
+          margin: 0px 0px 0px 5px;
+        }
+
+      } 
+      .formulario__diasdisponibles {
+        display: flex;
+        justify-content: center;
+        input {
+          margin: 0px 10px;
+        }
+        div {
+          margin: 0px 0px 0px 5px;
+        }
+
+      } 
+      .formulario__botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 30px;
+         input {
+          display: flex;
+          flex-direction: row;
+         }
+        
+      }
+   }
+
+}
+
+.contacto__2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: $sombra;
+  opacity: 0.7;
+  
+}
+
+.contacto__team {
+  display: grid;
+  flex-flow: row wrap;
+   .contacto__team__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+      h2 {
+      text-align: center;
+      color:$color-secundario;
+      font-size: 20px;
+      }
+      a{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+          img{
+          width: 200px;
+          display: flex;
+          transition: width 2s;
+          border-radius: 300px;
+          align-self: center;
+          box-shadow: $sombra;
+          &:hover {
+            width: 250px;
+          }
+          }
+          p{
+          text-align: center;
+          margin: 0;
+          }
+      }
+   }
+}
+
+@media (min-width:1024px) {
+  .contacto__team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .contacto__team__item {
+      width: 33%;
+      align-self: center;
+      justify-self: center;
+    }
+
+  }
+  
+}
