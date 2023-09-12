@@ -368,6 +368,130 @@ body main {
     display: none;
   }
 }
+/*Views/Productos */
+.catalogo {
+  display: grid;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.catalogo h2 {
+  text-align: center;
+  margin: 30px;
+}
+.catalogo h3 {
+  text-align: center;
+  font-weight: bold;
+  margin: 50px;
+}
+.catalogo .catalogo__subtitulo {
+  text-decoration: underline;
+  color: #ffba00;
+  font-size: 18px;
+  text-align: center;
+}
+.catalogo .catalogo__precio {
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+}
+.catalogo .catalogo__prodmusicalcompleta {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+}
+.catalogo .catalogo__prodmusicalcompleta .catalogo__prodmusicalcompleta__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.catalogo .catalogo__prodmusicalcompleta .catalogo__prodmusicalcompleta__items .catalogo__prodmusicalcompleta__promo {
+  width: 250px;
+  height: 220px;
+  align-self: center;
+}
+.catalogo .catalogo__prodmusicalcompleta .catalogo__prodmusicalcompleta__items .catalogo__prodmusicalcompleta__promo li {
+  align-self: center;
+  width: 230px;
+  margin: 0px;
+}
+.catalogo .catalogo__beats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  width: 300px;
+}
+.catalogo .catalogo__beats .catalogo__beats__items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.catalogo .catalogo__beats .catalogo__beats__items .catalogo__beats__item {
+  width: 250px;
+  align-self: center;
+  margin: 20px 0px 20px 0px;
+}
+.catalogo .catalogo__beats .catalogo__beats__items .catalogo__beats__item li {
+  align-self: center;
+  width: 230px;
+  margin: 0px;
+}
+.catalogo .catalogo__beats .catalogo__beats__info {
+  width: 290px;
+  align-self: center;
+}
+.catalogo .catalogo__beats .catalogo__beats__info h4 {
+  text-decoration: underline;
+}
+.catalogo .catalogo__beats .catalogo__beats__info .catalogo__beats__infotexto {
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+}
+.catalogo .catalogo__beats .catalogo__beats__info .catalogo__beats__infotexto p {
+  margin-bottom: 0;
+}
+.catalogo .catalogo__grabaciondevoces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  width: 300px;
+}
+.catalogo .catalogo__grabaciondevoces .catalogo__grabaciondevoces__item {
+  width: 250px;
+  align-self: center;
+  margin: 20px 0px 20px 0px;
+}
+.catalogo .catalogo__grabaciondevoces .catalogo__grabaciondevoces__item li {
+  align-self: center;
+  width: 230px;
+  margin: 0px;
+}
+.catalogo .catalogo__sonido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  width: 300px;
+}
+.catalogo .catalogo__sonido .catalogo__sonido__item {
+  width: 250px;
+  align-self: center;
+  margin: 20px 0px 20px 0px;
+}
+.catalogo .catalogo__sonido .catalogo__sonido__item li {
+  align-self: center;
+  width: 230px;
+  margin: 0px;
+}
+
 /* Views/Nosotros */
 .nosotros__presentacion {
   display: grid;
@@ -518,6 +642,8 @@ body main {
 
 .contacto__team {
   display: grid;
+  height: 1500px;
+  overflow: hidden;
   flex-flow: row wrap;
   background-image: linear-gradient(to left, #360036, #000000);
   padding-bottom: 20px;
