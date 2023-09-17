@@ -472,6 +472,7 @@ body main {
 @media (min-width: 1440px) {
   .productos1 .productos1__items .productos1__items__texto {
     text-align: center;
+    width: 400px;
   }
   .productos1 .productos1__items .productos1__items__texto h2 {
     margin: 0px 0px 0px 0px;
@@ -495,6 +496,7 @@ body main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 40px 0px 40px 0px;
 }
 .productos__aviso .productos__aviso__texto {
   display: flex;
@@ -514,6 +516,9 @@ body main {
 }
 .productos__aviso a:hover {
   color: #ffba00;
+}
+.productos__aviso a:link {
+  text-decoration: none;
 }
 
 .catalogo {
@@ -556,7 +561,8 @@ body main {
   flex-direction: column;
   justify-self: center;
   width: 100%;
-  background-image: linear-gradient(#360036, #000000);
+  background-image: linear-gradient(#006875, #000000);
+  margin: 0px 0px 40px 0px;
 }
 .catalogo .catalogo__prodmusicalcompleta .catalogo__prodmusicalcompleta__items {
   display: flex;
@@ -584,8 +590,8 @@ body main {
   align-content: center;
   justify-self: center;
   width: 100%;
-  background-image: linear-gradient(#360036, #000000);
-  margin: 0px;
+  background-image: linear-gradient(#9e0042, #000000);
+  margin: 0px 0px 40px;
 }
 .catalogo .catalogo__beats h3 {
   width: 100%;
@@ -647,8 +653,8 @@ body main {
   justify-self: center;
   width: 100%;
   position: relative;
-  background-image: linear-gradient(#360036, #000000);
-  margin: 0px;
+  background-image: linear-gradient(#578600, #000000);
+  margin: 0px 0px 40px 0px;
 }
 .catalogo .catalogo__grabaciondevoces h3 {
   width: 100%;
@@ -917,13 +923,14 @@ body main {
   height: 60px;
   margin: 0;
   padding: 30px 0px 30px 0px;
+  box-shadow: 0 10px 13px rgba(0, 0, 0, 0.3);
 }
 
 .contacto__team {
   display: grid;
   overflow: hidden;
   flex-flow: row wrap;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .contacto__team .contacto__team__fondo {
   display: flex;
@@ -937,6 +944,7 @@ body main {
   flex-direction: column;
   width: 300px;
   height: 400px;
+  margin: 60px 0px 0px 0px;
   align-self: center;
   justify-self: center;
   z-index: 1;
@@ -972,12 +980,15 @@ body main {
 .contacto__formulario {
   padding: 20px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
   justify-self: center;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 13px rgba(0, 0, 0, 0.3);
   max-width: 400px;
   width: 100%;
   margin: 0px 0px 30px 0px;
+  overflow: hidden;
 }
 .contacto__formulario .form-item {
   display: flex;

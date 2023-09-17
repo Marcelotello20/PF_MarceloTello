@@ -533,6 +533,7 @@ body {
     .productos1__items {
       .productos1__items__texto {
         text-align: center;
+        width: 400px;
         h2 {
           margin: 0px 0px 0px 0px;
           text-align: center;
@@ -561,6 +562,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 40px 0px 40px 0px;
   .productos__aviso__texto{
     display: flex;
     flex-direction: column;
@@ -579,6 +581,9 @@ body {
       
       &:hover {
         color: $color-principal;
+      }
+      &:link {
+        text-decoration: none;
       }
     }
   }
@@ -624,7 +629,8 @@ body {
     flex-direction: column;
     justify-self: center;
     width: 100%;
-    background-image: $fondo-gradiente3;
+    background-image: linear-gradient(#006875,#000000);
+    margin: 0px 0px 40px 0px;
     .catalogo__prodmusicalcompleta__items {
       display: flex;
       flex-direction: row;
@@ -653,8 +659,8 @@ body {
     align-content: center;
     justify-self: center;
     width: 100%; 
-    background-image: $fondo-gradiente3;
-    margin: 0px;
+    background-image: linear-gradient(#9e0042,#000000);
+    margin: 0px 0px 40px;
     h3 {
       width: 100%;
     }
@@ -717,8 +723,8 @@ body {
     justify-self: center;
     width: 100%;
     position: relative;
-    background-image: $fondo-gradiente3;
-    margin: 0px;
+    background-image: linear-gradient(#578600,#000000);
+    margin: 0px 0px 40px 0px;
     h3 {
       width: 100%;
     }
@@ -820,6 +826,8 @@ body {
     }  
   }
 }
+
+
 
 
 /* Views/Nosotros */
@@ -1001,6 +1009,7 @@ body {
   height: 60px;
   margin: 0;
   padding: 30px 0px 30px 0px;
+  box-shadow: $sombra;
   
 }
 
@@ -1008,8 +1017,7 @@ body {
   display: grid;
   overflow: hidden;
   flex-flow: row wrap;
-  
-  padding-bottom:20px ;
+  padding-bottom:40px ;
    .contacto__team__fondo {
     display: flex;
     position: absolute;
@@ -1022,6 +1030,7 @@ body {
     flex-direction: column;
     width: 300px;
     height: 400px;
+    margin: 60px 0px 0px 0px;
     align-self: center;
     justify-self: center;
     z-index: 1;
@@ -1058,12 +1067,15 @@ body {
 .contacto__formulario {
   padding: 20px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
   justify-self: center;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: $sombra;
   max-width: 400px;
   width: 100%;
   margin: 0px 0px 30px 0px;
+  overflow: hidden;
   .form-item {
     display: flex;
     flex-direction: column;
