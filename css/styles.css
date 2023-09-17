@@ -165,7 +165,7 @@ body main {
   z-index: 2;
 }
 .presentacion .presentacion__texto .presentacion__texto__parrafo {
-  font-size: 13px;
+  font-size: 18px;
   width: 280px;
 }
 .presentacion .presentacion__texto .presentacion__texto__titulo {
@@ -969,55 +969,51 @@ body main {
   margin: 0;
 }
 
-.contacto__1 {
-  display: grid;
+.contacto__formulario {
+  padding: 20px;
   z-index: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-self: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
   width: 100%;
-  padding-bottom: 20px;
+  margin: 0px 0px 30px 0px;
 }
-.contacto__1 form {
-  justify-content: center;
+.contacto__formulario .form-item {
   display: flex;
   flex-direction: column;
 }
-.contacto__1 form .formulario__turnos {
-  display: flex;
-  justify-content: center;
+.contacto__formulario .form-item label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-.contacto__1 form .formulario__turnos input {
-  margin: 0px 10px;
+.contacto__formulario .form-item input, .contacto__formulario .form-item textarea {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.contacto__1 form .formulario__turnos div {
-  margin: 0px 0px 0px 5px;
+.contacto__formulario h2 {
+  text-align: center;
 }
-.contacto__1 form .formulario__diasdisponibles {
-  display: flex;
-  justify-content: center;
+.contacto__formulario form {
+  display: grid;
+  gap: 10px;
 }
-.contacto__1 form .formulario__diasdisponibles input {
-  margin: 0px 10px;
+.contacto__formulario form button {
+  background-color: #ffba00;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
 }
-.contacto__1 form .formulario__diasdisponibles div {
-  margin: 0px 0px 0px 5px;
-}
-.contacto__1 form .formulario__botones {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 30px;
-}
-.contacto__1 form .formulario__botones input {
-  display: flex;
-  flex-direction: row;
+.contacto__formulario form button:hover {
+  background-color: #af8000;
 }
 
-@media (max-width: 768px) {
-  .contacto__1 {
-    display: none;
-  }
-}
 .contacto__2 {
   width: 100%;
   height: 100%;

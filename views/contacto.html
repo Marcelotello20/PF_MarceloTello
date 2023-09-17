@@ -62,69 +62,28 @@
                 
             </div>
         </section>
-        <section class="contacto__1">
-            <div class="contacto__1__formulario" > 
-                <h3>Formulario</h3>           
-                <form action="texto.text" method="post" enctype="text/plain">
-                  <fieldset class="formulario__campostexto">
-                    <legend><strong>Campos de Texto</strong></legend>
-                    <div>
-                        <label for="Nombre">Nombre:</label>
-                        <input type="text" placeholder="Nombre Apellido" id="Nombre">
-                    </div>
-                    <div>
-                        <label for="Artista">Artista:</label>
-                        <input type="text" placeholder="Tu Nombre de Artista" id="Artista">
-                    </div>
-                    <div>
-                        <label for="Proyecto">Tu proyecto</label>
-                        <input type="text" placeholder="cuentanos sobre tu proyecto" id="proyecto">
-                    </div> 
-                    <div>
-                        <label for="Email">Email</label>
-                        <input type="email" placeholder="Email">
-                    </div>
-                    
-                  </fieldset class=>
-                  <fieldset class="formulario__turnos">
-                    <legend><strong>Tu tiempo disponible</strong></legend>
-                    <div>Turno Mañana 10:00-13:00hrs</div>
-                    <input type="radio" name="Turno Mañana" value="Mañana">
-                    <div>Turno Tarde 14:00hrs-20:00hrs</div>
-                    <input type="radio" name="Turno Tarde" value="Tarde">
-                    <div>Turno Noche 20:00hrs-22:00hrs</div> 
-                    <input type="radio" name="Turno Noche" value="Noche">
-
-                  </fieldset>
-                  <fieldset class="formulario__diasdisponibles">
-                    <legend><strong>Dias de la semana disponibles</strong></legend>
-                    <div>Lunes</div>
-                    <input type="radio" name="Lunes" value="Lunes">
-                    <div>Martes</div>
-                    <input type="radio" name="Martes" value="Martes">
-                    <div>Miercoles</div> 
-                    <input type="radio" name="Miercoles" value="Miercoles">
-                    <div>Jueves</div> 
-                    <input type="radio" name="Jueves" value="Jueves">
-                    <div>Viernes</div> 
-                    <input type="radio" name="Viernes" value="Viernes">
-                    <div>Sabado</div> 
-                    <input type="radio" name="Sabado" value="Sabado">
-
-                  </fieldset>
-                  <div class="formulario__botones">
-                    <input type="Reset" value="Restablecer">
-                    <input type="submit" value="Enviar informacion">
-                    <input type="button" value="Sin accion">
-                  </div>
-               </form>
-            </div>
+        <section class="contacto__formulario">
+            <h2>Formulario</h2>
+            <form action="texto.text" method="post" enctype="text/plain">
+                <div class="form-item">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="form-item">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-item">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
         <section class="contacto__2">
             <img src="../Imagenes/Contacto/Micro 3.jpg" width="100%" alt="imagen microfono">
         </section>
         
-
     </main>
     <footer class="footer ">
         <div class="separador"></div>
